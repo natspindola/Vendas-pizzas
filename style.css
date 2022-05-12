@@ -29,6 +29,7 @@ section {
 section button {
     margin: 5px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 table, th, td {
@@ -39,7 +40,7 @@ table, th, td {
 
 }
 
-.calabresa {
+#imgCalabresa {
     position: absolute;
     width: 300px;
     height: 200px;
@@ -48,7 +49,7 @@ table, th, td {
     display: none;
 }
 
-.mussarela {
+#imgMussarela {
     position: absolute;
     width: 300px;
     height: 200px;
@@ -57,7 +58,7 @@ table, th, td {
     display: none;
 }
 
-.marguerita {
+#imgMarguerita {
     position: absolute;
     width: 300px;
     height: 200px;
