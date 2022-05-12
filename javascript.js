@@ -18,17 +18,21 @@ btnEstorno.addEventListener('click', estorno, false);
 btnPlanilha.addEventListener('click', planilha, false);
 
 // funções
-function venda(e)
-{
-    if(document.getElementById('mussarela').checked)
-    {
+function venda(e) {
+    if (document.getElementById('mussarela').checked) {
         somaMussarela = somaMussarela + 1;
         vendaMussarela = vendaMussarela + 25.00;
+        document.getElementById('resultadoMussarela').innerHTML = somaMussarela;
+        document.getElementById('vendaMussarela').innerHTML = vendaMussarela.toFixed(2);
     } else if (document.getElementById('marguerita').checked) {
         somaMarguerita = somaMarguerita + 1;
-        vendaMussarela = vendaMussarela + 25.00;
+        vendaMarguerita = vendaMarguerita + 25.00;
+        document.getElementById('resultadoMarguerita').innerHTML = somaMarguerita;
+        document.getElementById('vendaMarguerita').innerHTML = vendaMarguerita.toFixed(2);
     } else if (document.getElementById('calabresa').checked) {
         somaCalabresa = somaCalabresa + 1;
         vendaCalabresa = vendaCalabresa + 25.00;
+        document.getElementById('resultadoCalabresa').innerHTML = somaCalabresa;
+        document.getElementById('vendaCalabresa').innerHTML = vendaCalabresa.toFixed(2);
     }
 }
