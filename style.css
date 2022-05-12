@@ -16,10 +16,6 @@ header ul li {
 }
 
 section form ul li {
-    list-style: none;
-}
-
-section form ul li {
     font-size: 22px;
 }
 
@@ -28,4 +24,44 @@ section {
     display: flex;
     justify-content: center;
     font-size: medium;
+}
+
+section button {
+    margin: 5px;
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: medium;
+
+}
+
+.calabresa {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 200px;
+    right: 240px;
+    display: none;
+}
+
+.mussarela {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 200px;
+    right: 240px;
+    display: none;
+}
+
+.marguerita {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 200px;
+    right: 240px;
+    display: none;
 }

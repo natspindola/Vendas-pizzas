@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,22 @@
     <title>Vendas de Pizzas</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <ul>
-            <li><h1>Comunidade Boa Esperança</h1></li>
-            <li><h2>Vendas de Pizzas</h2></li>
+            <li>
+                <h1>Comunidade Boa Esperança</h1>
+            </li>
+            <li>
+                <h2>Vendas de Pizzas</h2>
+            </li>
         </ul>
     </header>
 
     <section>
-        <h3>Selecione a pizza que foi vendida:</h3>
         <form>
+            <h3>Selecione a pizza que foi vendida:</h3>
             <ul>
                 <li><input type="radio" id="mussarela" name="pizzas"><label for="mussarela">Mussarela</label></li>
                 <li><input type="radio" id="marguerita" name="pizzas"><label for="marguerita">Marguerita</label></li>
@@ -25,6 +31,12 @@
             </ul>
         </form>
     </section>
+
+    <div class="img">
+        <img class="calabresa" src="imagens/calabresa.jpg">
+        <img class="marguerita" src="imagens/marguerita.jpg">
+        <img class="mussarela" src="imagens/mussarela.jpg">
+    </div>
 
     <section>
         <button id="vendas">Vendas</button>
@@ -34,16 +46,24 @@
     <section id="table">
         <table>
             <tr>
-                <th>Sabores</th><th>Quantidade</th><th>Valores</th>
+                <th>Sabores</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
             </tr>
             <tr>
-                <td>Mussarela</td><td id="resultadoMussarela"></td><td id="vendaMussarela"></td>
+                <td>Mussarela</td>
+                <td id="resultadoMussarela"></td>
+                <td id="vendaMussarela"></td>
             </tr>
             <tr>
-                <td>Marguerita</td><td id="resultadoMarguerita"></td><td id="vendaMarguerita"></td>
+                <td>Marguerita</td>
+                <td id="resultadoMarguerita"></td>
+                <td id="vendaMarguerita"></td>
             </tr>
             <tr>
-                <td>Calabresa</td><td id="resultadoCalabresa"></td><td id="vendaCalabresa"></td>
+                <td>Calabresa</td>
+                <td id="resultadoCalabresa"></td>
+                <td id="vendaCalabresa"></td>
             </tr>
         </table>
     </section>
@@ -51,8 +71,9 @@
     <section>
         <button id="export">Planilha</button>
     </section>
- 
+
     <script src="tableToExcel.js"></script>
     <script src="javascript.js"></script>
 </body>
+
 </html>
