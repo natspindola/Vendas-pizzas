@@ -74,3 +74,8 @@ function estorno(e) {
 function planilha(e) {
     TableToExcel.convert(document.getElementById('table'));
 }
+
+function imgMussarela()
+    {
+        document.getElementById("imgMussarela").src = "imagens/mussarela.png";
+    }
